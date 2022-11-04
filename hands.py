@@ -65,12 +65,14 @@ class HandDetector:
         """
         vectorize = lambda u, v: [v[i] - u[i] for i in range(len(v))]
 
+        #vectors defining each finger
         palm_index_vector = vectorize(landmarks[0], landmarks[5])
         index_vector = vectorize(landmarks[5], landmarks[8])
         middle_vector = vectorize(landmarks[9], landmarks[12])
         ring_vector = vectorize(landmarks[13], landmarks[16])
         pinky_vector = vectorize(landmarks[17], landmarks[20])
 
+        #fingertips
         thumb_pointer = landmarks[4]
         index_pointer = landmarks[8]
         middle_pointer = landmarks[12]
