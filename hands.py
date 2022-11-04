@@ -82,7 +82,6 @@ class HandDetector:
         vector_magnitude = lambda vector: sum(dim ** 2 for dim in vector) ** .5
         cos_angle = lambda u, v: np.dot(u, v) / (vector_magnitude(u)
                                                  * vector_magnitude(v))
-        print(abs( index_pointer[2] - thumb_pointer[2]))
         # really just to debug
         if debug:
             return "DEBUGGING"

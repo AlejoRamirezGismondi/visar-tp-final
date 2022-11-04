@@ -62,7 +62,7 @@ def machineDetection(detectFromFrame, lastMatches, model):
 
 def main():
     # Loading the default webcam of PC.
-    cap = cv.VideoCapture(1)
+    cap = cv.VideoCapture(0)
 
     # width and height for 2-D grid
     width = int(cap.get(cv.CAP_PROP_FRAME_WIDTH) + 0.5)
