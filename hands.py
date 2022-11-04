@@ -82,19 +82,19 @@ class HandDetector:
         vector_magnitude = lambda vector: sum(dim ** 2 for dim in vector) ** .5
         cos_angle = lambda u, v: np.dot(u, v) / (vector_magnitude(u)
                                                  * vector_magnitude(v))
-
+        print(abs( index_pointer[2] - thumb_pointer[2]))
         # really just to debug
         if debug:
             return "DEBUGGING"
 
         # index finger touching middle finger
         if abs( index_pointer[1] - middle_pointer[1]) < 40 and \
-                abs( index_pointer[2] - middle_pointer[2]) < 20:
+                abs( index_pointer[2] - middle_pointer[2]) < 30:
                 return "DRAW"
 
         # index finger touching thumb
         elif abs( index_pointer[1] - thumb_pointer[1]) < 10 and \
-            abs( index_pointer[2] - thumb_pointer[2]) > 10:
+            abs( index_pointer[2] - thumb_pointer[2]) < 25:
             return "ERASE"
 
         # otherwise hover
