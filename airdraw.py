@@ -43,7 +43,7 @@ def most_repeated(lst):
 
 def main():
     # Loading the default webcam of PC.
-    cap = cv.VideoCapture(0)
+    cap = cv.VideoCapture(1)
 
     # width and height for 2-D grid
     width = int(cap.get(cv.CAP_PROP_FRAME_WIDTH) + 0.5)
@@ -130,7 +130,7 @@ def main():
 
                 for letter in shapeContours:
 
-                    if cv.matchShapes(letter, detected, cv.CONTOURS_MATCH_I2, 0) < 0.1:
+                    if cv.matchShapes(letter, detected, cv.CONTOURS_MATCH_I2, 0) < 0.01:
                         cv.drawContours(alphabet, letter, -1, (0, 0, 255), 2)
                         cv.imshow("alphabet", alphabet)
 
