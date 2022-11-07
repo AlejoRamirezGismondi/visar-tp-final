@@ -1,6 +1,8 @@
-# Air Draw
-![Demo of my trying out the hands](./demo.gif)
+# Air Draw Revamped
 
+<p style="text-align: justify; margin-bottom: 20px; margin-top: 20px;">
+This project was created from a fork of <a href="https://github.com/arefmalek/airdraw">arefmalek/airdraw</a> as a base. Details about implementation can be found after the Setup section.
+</p>
 
 ## Setup
 <b>NOTE</b> This setup is just for what I use (Ubuntu 20.04). While I am willing to bet this will work for windows and unix, just be safe!
@@ -13,7 +15,28 @@
 ### Run program
 `python3 airdraw.py`
 
-## Available Gestures
+## Demostration Video
+
+TODO ADD DEMONSTRATION VIDEO HERE
+
+## Inner workings
+
+The original code was forked from arefmalek/airdraw.
+This repository provided the base of Airdraw, making use of mediaPipe to detect a hand and then using OpenCV to draw.
+
+The original gestures were changed from the original ones (can bee seen below in the "Old Available Gestures" section.
+
+The lines are drawn both over the image and in a separate canvas, from which OpenCV is used to detect the outermost contour of the drawing.
+
+The contour is then processed by the machine learning model, which can detect between triangles, stars and rectangles.
+
+In order to provide more stability for the model, the last 60 predictions are stored and the result is the average prediction of that list. This has some drawbacks, such as delayed detection time, although it compensates with more stability for the result of the prediction.
+
+## Old Demonstration
+
+![Demo of my trying out the hands](./demo.gif)
+
+## Old Available Gestures
 
 ### Drawing
 ![Drawing directly on screen](./demo_gifs/drawing.gif)
@@ -23,7 +46,6 @@
 
 ### Erasing
 ![Erasing earlier drawings on screen](./demo_gifs/eraser.gif)
-
 
 ## Why?
 I've seen tons of attempts of this sort of thing with HSV masks, and while it's more true to image processing that openCV caters for, I was sort of against letting our own styluses [go to waste](https://money.cnn.com/2015/09/10/technology/apple-pencil-steve-jobs-stylus/index.html).
