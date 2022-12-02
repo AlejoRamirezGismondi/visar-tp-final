@@ -17,7 +17,7 @@ This project was created from a fork of <a href="https://github.com/arefmalek/ai
 
 ## Demostration Video
 
-TODO ADD DEMONSTRATION VIDEO HERE
+![Demo of us trying out the hands](./demo_gifs/demonstration.gif)
 
 ## Inner workings
 
