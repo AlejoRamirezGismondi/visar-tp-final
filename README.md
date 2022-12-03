@@ -1,3 +1,10 @@
+# Members
+
+- Alejo Ramirez Gismondi
+- Katia Cammisa
+- Matías Gayo
+- Numa Leone
+
 # Air Draw Revamped
 
 <p style="text-align: justify; margin-bottom: 20px; margin-top: 20px;">
@@ -31,6 +38,16 @@ The lines are drawn both over the image and in a separate canvas, from which Ope
 The contour is then processed by the machine learning model, which can detect between triangles, stars and rectangles.
 
 In order to provide more stability for the model, the last 60 predictions are stored and the result is the average prediction of that list. This has some drawbacks, such as delayed detection time, although it compensates with more stability for the result of the prediction.
+
+## New Gestures
+
+### Drawing
+
+Join the middle finger with the index as shown in the video above
+
+### Erasing
+
+Join the thumb with the index and erase with the middle finger. The bigger the distance between the index and the middle finger, the bigger the eraser
 
 ## Old Demonstration
 
