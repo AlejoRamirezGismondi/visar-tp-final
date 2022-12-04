@@ -53,6 +53,10 @@ Join the middle finger with the index as shown in the video above
 
 Join the thumb with the index and erase with the middle finger. The bigger the distance between the index and the middle finger, the bigger the eraser
 
+### Erasing
+
+Lift your index and your pinky, and leave all of your other fingers down. (Like making a rock culture symbol).
+
 ## Old Demonstration
 
 ![Demo of my trying out the hands](./demo.gif)
