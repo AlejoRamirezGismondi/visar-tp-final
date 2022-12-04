@@ -55,7 +55,9 @@ Join the thumb with the index and erase with the middle finger. The bigger the d
 
 ### Hovering
 
-To hover, you must do any other hand gesture as longs as it is different from the Drawing and Erasing ones.
+To hover, you must do any other hand gesture as longs as it is different from the Drawing and Erasing ones. In this mode, you can select any of the 3 colors to draw, by hovering into the box colors at the top of the screen.
+
+You can also hover into the Clear all button to delete all the drawings.
 
 ## Old Demonstration
 
