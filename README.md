@@ -55,7 +55,7 @@ Join the thumb with the index and erase with the middle finger. The bigger the d
 
 ### Hovering
 
-Lift your index and your pinky, and leave all of your other fingers down. (Like making a rock culture symbol).
+To hover, you must do any other hand gesture as longs as it is different from the Drawing and Erasing ones.
 
 ## Old Demonstration
 
