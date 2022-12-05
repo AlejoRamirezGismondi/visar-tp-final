@@ -33,11 +33,11 @@ This project was created from a fork of <a href="https://github.com/arefmalek/ai
 The original code was forked from arefmalek/airdraw.
 This repository provided the base of Airdraw, making use of mediaPipe to detect a hand and then using OpenCV to draw.
 
-The original gestures were changed from the original ones (can bee seen below in the "Old Available Gestures" section.
+The actual gestures were changed from the original ones that can bee seen below in the "Old Available Gestures" section.
 
 The lines are drawn both over the image and in a separate canvas, from which OpenCV is used to detect the outermost contour of the drawing.
 
-Having the drawings in a separate canvas provides us with an image free of noise, which makes detecting the figures easier
+Having the drawings in a separate canvas provides us with an image free of noise, which makes detecting the figures easier.
 
 The contour is then processed by the machine learning model, which can detect between triangles, stars and rectangles.
 
